@@ -1,0 +1,23 @@
+img {
+  width: 100%;
+}
+
+.swiper {
+  width: 100vw;
+  height: 100vh;
+}
+.swiper-slide__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  height: 100%;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.swiper .swiper-pagination-bullet {
+  border-radius: 0;
+}
+.swiper .swiper-pagination-bullet-active {
+  background-color: #f4a286;
+}
+/*# sourceMappingURL=_home.css.map */

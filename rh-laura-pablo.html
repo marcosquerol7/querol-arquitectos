@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vivienda unifamiliar</title>
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <meta name="theme-color" content="#043845">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Marcos Querol Galve">
+    <meta name="keywords" content="arquitectura,arquitectos,grafico,web,viviendas,edificios">
+    <meta name="description" content="my description...">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="Querol Arquitectos">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcosquerol7">
+    <meta name="twitter:creator" content="@marcosquerol7">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <!--Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&family=Sulphur+Point:wght@400;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Javacript copiado de alpinejs -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- Plugin Swiperjs -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!-- CSS -->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- End CSS -->
+    <!-- Javascript AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+<!-- HEADER, logo y menu -->
+<header
+        class="header"
+        x-data="{ open: false, isTopScroll: true }"
+        @scroll.window="isTopScroll = window.pageYOffset === 0"
+        :class="isTopScroll ? '' : 'header__white'"
+>
+    <div class="container">
+        <div class="header__logo">
+            <a href="index.html">
+                <img class="header__logo--img" src="img/logos/logotipo-completo-azul.svg" alt="querol-arquitectos">
+            </a>
+        </div>
+        <button class="button nav__open" @click="open = true">
+            <img src="img/iconos/menu.svg" alt="menu">
+        </button>
+        <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+            <div class="nav__close-container">
+                <button class="button nav__close" @click="open = false">
+                    <img src="img/iconos/close.svg" alt="close">
+                </button>
+            </div>
+            <ul class="nav__ul">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="nosotros.html">
+                        Nosotros
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="proyectos.html">
+                        Proyectos
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <!-- Inicio del main: titulo + foto portada + texto + slider -->
+    <section class="container-galery">
+        <div class="encabezado">
+            <h1 class="h1-padding">Vivienda unifamiliar</h1>
+            <nav>
+                <ol class="migas">
+                    <li class="migas__bloque">
+                        <a href="proyectos.html" class="migas__link">
+                            <span class="migas__text">Proyectos_</span>
+                        </a>
+                    </li>
+                    <li class="migas__bloque">
+                        <a href="rehabilitacion.html" class="migas__link">
+                            <span class="migas__text">Rehabilitación_ _</span>
+                        </a>
+                    </li>
+                    <li class="migas__bloque">
+                        <a href="rh-laura-pablo.html" class="migas__link">
+                            <span class="migas__text migas__text--activated">Vivienda unifamiliar_ _ _</span>
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <section>
+        <div class="photo-landing">
+            <picture>
+                <source srcset="img/proyecto/rehabilitacion/laura-pablo/movil/portada_laura-pablo-mb.jpg" media="(max-width: 800px)">
+                <img class="photo-landing__img" src="img/proyecto/rehabilitacion/laura-pablo/desktop/portada_laura-pablo-ds.jpg" alt="foto-portada">
+            </picture>
+        </div>
+        <div class="container-project" data-aos="fade-up">
+            <div class="container-project__info">
+                <span>Teruel.</span>
+                <span>2022. En ejecución.</span>
+            </div>
+            <div class="container-project__text">
+                <p class="container-project__text--1">Todo nace de la combinación de los dos materiales: piedra y ladrillo. A partir de ahí, el espacio nace.</p>
+                <p class="container-project__text--2">El proyecto se desarrolla en el barrio de San León, en Teruel, en una de las zonas de casas unifamiliares de Las Viñas. El objetivo de esta vivienda era crear un nuevo comienzo para la familia, con espacio para poder disfrutar de los juegos con los niños y crear un hogar para todos.</p>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/proyecto/rehabilitacion/laura-pablo/movil/foto-1.jpg" media="(max-width: 800px)">
+                            <img src="img/proyecto/rehabilitacion/laura-pablo/desktop/foto-1.jpg" alt="foto1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/proyecto/rehabilitacion/laura-pablo/movil/axo_mb.svg" media="(max-width: 800px)">
+                            <img src="img/proyecto/rehabilitacion/laura-pablo/desktop/axo_ds.svg" alt="foto2">
+                        </picture>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Inicio footer: logotipo contacto + copyright + instagram -->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__contact">
+            <a href="contacto.html">
+                <img class="footer__contact--img" src="img/logos/logotipo-q-azul.svg" alt="q-contacto">
+            </a>
+        </div>
+        <div class="footer__copyright">
+            <span>Querol Arquitectos 2022 ©</span>
+            <p>Todos los derechos reservados.</p>
+        </div>
+        <div class="footer__instagram">
+            <a href="https://www.instagram.com/querol.arquitectos/">
+                <img class="footer__instagram--img" src="img/logos/rrss/instagram.svg" alt="instagram">
+            </a>
+        </div>
+    </div>
+</footer>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+    });
+</script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rehabilitación</title>
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <meta name="theme-color" content="#043845">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Marcos Querol Galve">
+    <meta name="keywords" content="arquitectura,arquitectos,grafico,web,viviendas,edificios">
+    <meta name="description" content="my description...">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="Querol Arquitectos">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcosquerol7">
+    <meta name="twitter:creator" content="@marcosquerol7">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <!--Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&family=Sulphur+Point:wght@400;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Javacript copiado de alpinejs -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- Plugin Swiperjs -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!-- CSS -->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- End CSS -->
+    <!-- Javascript AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- HEADER, logo y menu -->
+    <header
+            class="header"
+            x-data="{ open: false, isTopScroll: true }"
+            @scroll.window="isTopScroll = window.pageYOffset === 0"
+            :class="isTopScroll ? '' : 'header__white'"
+    >
+        <div class="container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img class="header__logo--img" src="img/logos/logotipo-completo-azul.svg" alt="querol-arquitectos">
+                </a>
+            </div>
+            <button class="button nav__open" @click="open = true">
+                <img src="img/iconos/menu.svg" alt="menu">
+            </button>
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <div class="nav__close-container">
+                    <button class="button nav__close" @click="open = false">
+                        <img src="img/iconos/close.svg" alt="close">
+                    </button>
+                </div>
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a class="nav__link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="proyectos.html">
+                            Proyectos
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Inicio del main: titulo + foto portada + texto -->
+        <section class="container-galery">
+            <div class="encabezado">
+                <h1 class="h1-padding">Rehabilitación</h1>
+                <nav>
+                    <ol class="migas">
+                        <li class="migas__bloque">
+                            <a href="proyectos.html" class="migas__link">
+                                <span class="migas__text">Proyectos_</span>
+                            </a>
+                        </li>
+                        <li class="migas__bloque">
+                            <a href="rehabilitacion.html" class="migas__link">
+                                <span class="migas__text migas__text--activated">Rehabilitación_ _</span>
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="galery">
+                <div class="galery__item galery__item-rh--1">
+                    <a href="rh-albarracin.html">
+                        <div class="galery__img-desktop">
+                            <picture>
+                                <source srcset="img/galeria/rehabilitacion/movil/galery_albarracin-mb.jpg" media="(max-width: 800px)">
+                                <img class="galery__img" src="img/galeria/rehabilitacion/desktop/galery_albarracin-ds.jpg" alt="albarracin">
+                            </picture>
+                        </div>
+                        <div class="galery__name">
+                            <span class="galery__name--title">Edificio con apartamentos</span>
+                            <span class="galery__name--text">Albarracín, Teruel</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galery__item galery__item-rh--2">
+                    <a href="#">
+                        <div class="galery__img-desktop">
+                            <picture>
+                                <source srcset="img/galeria/rehabilitacion/movil/galery_ermita-mb.jpg" media="(max-width: 800px)">
+                                <img class="galery__img" src="img/galeria/rehabilitacion/desktop/galery_ermita-ds.jpg" alt="ermita">
+                            </picture>
+                        </div>
+                        <div class="galery__name">
+                            <span class="galery__name--title">Ermita</span>
+                            <span class="galery__name--text">La Cañadica, Teruel</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galery__item galery__item-rh--3" data-aos="fade-left">
+                    <a href="rh-burbaguena.html">
+                        <div class="galery__img-desktop">
+                            <picture>
+                                <source srcset="img/galeria/rehabilitacion/movil/galery_burbaguena-mb.jpg" media="(max-width: 800px)">
+                                <img class="galery__img" src="img/galeria/rehabilitacion/desktop/galery_burbaguena-ds.jpg" alt="burbaguena">
+                            </picture>
+                        </div>
+                        <div class="galery__name">
+                            <span class="galery__name--title">Edificio de viviendas y farmacia</span>
+                            <span class="galery__name--text">Burbáguena, Teruel</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galery__item galery__item-rh--4" data-aos="fade-right">
+                    <a href="#">
+                        <div class="galery__img-desktop">
+                            <picture>
+                                <source srcset="img/galeria/rehabilitacion/movil/galery_camarillas-mb.jpg" media="(max-width: 800px)">
+                                <img class="galery__img" src="img/galeria/rehabilitacion/desktop/galery_camarillas-ds.jpg" alt="camarillas">
+                            </picture>
+                        </div>
+                        <div class="galery__name">
+                            <span class="galery__name--title">Vivienda unifamiliar</span>
+                            <span class="galery__name--text">Camarillas, Teruel</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galery__item galery__item-rh--5" data-aos="fade-left">
+                    <a href="rh-lamata.html">
+                        <div class="galery__img-desktop">
+                            <picture>
+                                <source srcset="img/galeria/rehabilitacion/movil/galery_mata-mb.jpg" media="(max-width: 800px)">
+                                <img class="galery__img" src="img/galeria/rehabilitacion/desktop/galery_mata-ds.jpg" alt="la-mata">
+                            </picture>
+                        </div>
+                        <div class="galery__name">
+                            <span class="galery__name--title">Edificio de viviendas</span>
+                            <span class="galery__name--text">La Mata, Teruel</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="galery__item galery__item-rh--6" data-aos="fade-up">
+                    <a href="rh-laura-pablo.html">
+                        <div class="galery__img-desktop">
+                            <picture>
+                                <source srcset="img/galeria/rehabilitacion/movil/galery_laura-pablo-mb.jpg" media="(max-width: 800px)">
+                                <img class="galery__img" src="img/galeria/rehabilitacion/desktop/galery_laura-pablo-ds.jpg" alt="vivienda-unifamiliar">
+                            </picture>
+                        </div>
+                        <div class="galery__name">
+                            <span class="galery__name--title">Vivienda unifamiliar</span>
+                            <span class="galery__name--text">Teruel</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Inicio footer: logotipo contacto + copyright + instagram -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__contact">
+                <a href="contacto.html">
+                    <img class="footer__contact--img" src="img/logos/logotipo-q-azul.svg" alt="q-contacto">
+                </a>
+            </div>
+            <div class="footer__copyright">
+                <span>Querol Arquitectos 2022 ©</span>
+                <p>Todos los derechos reservados.</p>
+            </div>
+            <div class="footer__instagram">
+                <a href="https://www.instagram.com/querol.arquitectos/">
+                    <img class="footer__instagram--img" src="img/logos/rrss/instagram.svg" alt="instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

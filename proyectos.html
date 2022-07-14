@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Proyectos</title>
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <meta name="theme-color" content="#043845">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Marcos Querol Galve">
+    <meta name="keywords" content="arquitectura,arquitectos,grafico,web,viviendas,edificios">
+    <meta name="description" content="my description...">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="Querol Arquitectos">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcosquerol7">
+    <meta name="twitter:creator" content="@marcosquerol7">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <!--Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&family=Sulphur+Point:wght@400;700&display=swap" rel="stylesheet">
+    <!--Javacript copiado de alpinejs -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- Plugin Swiperjs -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!-- CSS -->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- End CSS -->
+</head>
+<body class="body-salmon">
+    <header class="header" x-data="{ open: false }">
+        <div class="container">
+            <button class="button nav__open" @click="open = true">
+                <img src="img/iconos/arrow-left.svg" alt="flecha-izquierda">
+            </button>
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <div class="nav__close-container">
+                    <button class="button nav__close" @click="open = false">
+                        <img src="img/iconos/close.svg" alt="close">
+                    </button>
+                </div>
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a class="nav__link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="proyectos.html">
+                            Proyectos
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="categories">
+            <div class="categories__item categories__item--1">
+                <a href="nueva-planta.html">
+                    <img class="svg-active" src="img/iconos/nueva-planta.svg" alt="nueva-planta">
+                    <img class="svg-hover" src="img/iconos/hover-blanco/bl_nueva-planta.svg" alt="nueva-planta">
+                </a>
+            </div>
+            <div class="categories__item categories__item--2">
+                <a href="rehabilitacion.html">
+                    <img class="svg-active" src="img/iconos/rehabilitacion.svg" alt="rehabilitacion">
+                    <img class="svg-hover" src="img/iconos/hover-blanco/bl_rehabilitacion.svg" alt="rehabilitacion">
+                </a>
+            </div>
+            <div class="categories__item categories__item--3">
+                <a href="interiorismo.html">
+                    <img class="svg-active" src="img/iconos/interiorismo.svg" alt="interiorismo">
+                    <img class="svg-hover" src="img/iconos/hover-blanco/bl_interiorismo.svg" alt="interiorismo">
+                </a>
+            </div>
+            <div class="categories__item categories__item--4">
+                <a href="interiorismo-online.html">
+                    <img class="svg-active" src="img/iconos/interiorismo-online.svg" alt="interiorismo-online">
+                    <img class="svg-hover" src="img/iconos/hover-blanco/bl_interiorismo-online.svg" alt="interiorismo-online">
+                </a>
+            </div>
+            <div class="categories__item categories__item--5">
+                <a href="certificados.html">
+                    <img class="svg-active" src="img/iconos/certificados.svg" alt="certificados">
+                    <img class="svg-hover" src="img/iconos/hover-blanco/bl_certificados.svg" alt="certificados">
+                </a>
+            </div>
+            <div class="categories__item categories__item--6">
+                <a href="diseno-grafico-web.html">
+                    <img class="svg-active" src="img/iconos/diseno-grafico-web.svg" alt="diseno-grafico-web">
+                    <img class="svg-hover" src="img/iconos/hover-blanco/bl_diseno-grafico-web.svg" alt="diseno-grafico-web">
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

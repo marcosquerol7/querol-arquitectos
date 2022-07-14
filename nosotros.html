@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Nosotros</title>
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <meta name="theme-color" content="#043845">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Marcos Querol Galve">
+    <meta name="keywords" content="arquitectura,arquitectos,grafico,web,viviendas,edificios">
+    <meta name="description" content="my description...">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="Querol Arquitectos">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@marcosquerol7">
+    <meta name="twitter:creator" content="@marcosquerol7">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <!--Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&family=Sulphur+Point:wght@400;700&display=swap" rel="stylesheet">
+    <!--Javacript copiado de alpinejs -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- Plugin Swiperjs -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!-- CSS -->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 601px)">
+    <!-- End CSS -->
+</head>
+<body>
+    <!-- HEADER, logo y menu -->
+    <header
+        class="header"
+        x-data="{ open: false, isTopScroll: true }"
+        @scroll.window="isTopScroll = window.pageYOffset === 0"
+        :class="isTopScroll ? '' : 'header__white'"
+    >
+        <div class="container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img class="header__logo--img" src="img/logos/logotipo-completo-azul.svg" alt="querol-arquitectos">
+                </a>
+            </div>
+            <button class="button nav__open" @click="open = true">
+                <img src="img/iconos/menu.svg" alt="menu">
+            </button>
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <div class="nav__close-container">
+                    <button class="button nav__close" @click="open = false">
+                        <img src="img/iconos/close.svg" alt="close">
+                    </button>
+                </div>
+                <ul class="nav__ul">
+                    <li class="nav__item">
+                        <a class="nav__link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="proyectos.html">
+                            Proyectos
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Inicio del main: titulo + foto portada + texto -->
+        <section class="container">
+            <h1>Nosotros</h1>
+            <div class="container__item">
+                <img class="container__item--img" src="img/nosotros/foto-nosotros.jpg" alt="foto-equipo">
+            </div>
+            <div class="container__text">
+                <p class="container__text--cita">“La arquitectura sólo se considera completa con la intervención del ser humano que la experimenta. En otras palabras, el espacio arquitectónico sólo cobra vida en correspondencia con la presencia humana que lo percibe”. Tadao Ando</p>
+                <p class="container__text--parrafo">Querol Arquitectos es un equipo de arquitectos interesados en todo el ámbito de la arquitectura, el diseño y la cultura que lo rodea. Es un estudio familiar con sede en Teruel, España.</p>
+                <p class="container__text--parrafo">Con sede en Teruel, contamos con una larga experiencia en la provincia y en la propia ciudad, aunque también trabajamos fuera de esta zona.El estudio se encuentra en la busqueda de poder mezclar el mundo más tradicional, con el que contamos con una gran experiencia a nuestras espaldas, y la innovación y las ganas de aprender y experimentar con lo nuevo. </p>
+                <p class="container__text--parrafo">El estudio se encuentra en la busqueda de poder mezclar el mundo más tradicional, con el que contamos con una gran experiencia a nuestras espaldas, y la innovación y las ganas de aprender y experimentar con lo nuevo.</p>
+                <p class="container__text--parrafo">Con la unión del talento creativo y de un carácter multidisciplinar, especializados en realizar trabajos de arquitectura, trabajamos con las soluciones que más se adaptan a la visión del cliente, y con una visión global del mundo que nos rodea. Inquietos por observar nuevos espacios, nuevas costumbres y maneras de vivir, pero con un pie en el presente y vista al pasado. </p>
+                <p class="container__text--parrafo">Nuestros valores a la hora de trabajar se basan en buscar la mejor solución posible para el cliente, aportando una respuesta técnica a un contexto concreto. Los arquitectura también es la búsqueda de soluciones a las necesidades de cada uno, y cada proyecto es una nueva oportunidad.</p>
+            </div>
+        </section>
+    </main>
+    <!-- Inicio footer: logotipo contacto + copyright + instagram -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__contact">
+                <a href="contacto.html">
+                    <img class="footer__contact--img" src="img/logos/logotipo-q-azul.svg" alt="q-contacto">
+                </a>
+            </div>
+            <div class="footer__copyright">
+                <span>Querol Arquitectos 2022 ©</span>
+                <p>Todos los derechos reservados.</p>
+            </div>
+            <div class="footer__instagram">
+                <a href="https://www.instagram.com/querol.arquitectos/">
+                    <img class="footer__instagram--img" src="img/logos/rrss/instagram.svg" alt="instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

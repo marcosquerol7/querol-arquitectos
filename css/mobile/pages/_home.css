@@ -1,0 +1,14 @@
+img {
+  width: 100%;
+}
+
+.swiper {
+  width: 100vw;
+}
+.swiper .swiper-pagination-bullet {
+  border-radius: 0;
+}
+.swiper .swiper-pagination-bullet-active {
+  background-color: #f4a286;
+}
+/*# sourceMappingURL=_home.css.map */
